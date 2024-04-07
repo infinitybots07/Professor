@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/NobiDeveloper/Nobita-Filter-Bot/tree/advance.git /Nobita-Filter-Bot
+  git clone https://github.com/infinitybots07/Professor.git /Professor
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Nobita-Filter-Bot
+  git clone $UPSTREAM_REPO /Professor
 fi
-cd /Nobita-Filter-Bot
+cd /Professor
 pip3 install -U -r requirements.txt
 echo "Starting...."
 python3 bot.py
