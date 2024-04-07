@@ -35,5 +35,5 @@ gunicorn
 aiohttp
 ytthumb
 YoutubeTags
-dnspython3
+dnspython
 
