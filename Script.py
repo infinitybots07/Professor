@@ -14,8 +14,8 @@ class script(object):
 <b>{} 🙋‍♂
 
 🔺 ᴍʏ ɴᴀᴍᴇ - ᴍʀ ɪɴꜰɪɴɪᴛʏ
-♾ ᴜsᴇʀɴᴀᴍᴇ - <a href='https://telegram.me/NobiDeveloper'></a>
-❕ ᴘᴍ. ᴅᴍ ʟɪɴᴋ - <a href='https://telegram.me/Nobideveloperr'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+♾ ᴜsᴇʀɴᴀᴍᴇ - <a href='https://telegram.me/mpbotzsupport_bot'></a>
+❕ ᴘᴍ. ᴅᴍ ʟɪɴᴋ - <a href='https://telegram.me/mpbotzsupport_bot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 👼 
 ⏳ 
 🎭 
@@ -79,7 +79,7 @@ class script(object):
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ</b>
 
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://youtube.com/@NobiDeveloper)</code>
+<code>[Button Text](buttonurl:https://t.me/infinity_botzz/13)</code>
 
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
@@ -152,7 +152,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ┣⪼𖨠 ♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
 ┣⪼𖨠 🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ┣⪼𖨠 🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>
-╰━━━━━━━━━❰ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢ❱━━━━══❍⊱❁۪۪</b>"""
+╰━━━━━━━━━❰<a href='https://telegram.me/infinity_botzz'>ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢ</a>❱━━━━══❍⊱❁۪۪</b>"""
 
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
 
@@ -198,7 +198,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
 𝟹) ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ
 
-<b><a href=https://telegram.me/allrequestgroups>~ ʀᴇǫᴜᴇ𝗌ᴛ ᴛᴏ ᴏᴡɴᴇʀ</a></b>
+<b><a href=https://telegram.me/mpbotzsupport_bot>~ ʀᴇǫᴜᴇ𝗌ᴛ ᴛᴏ ᴏᴡɴᴇʀ</a></b>
 """
 
     TOP_ALRT_MSG = """ꜱᴇᴀʀᴄʜɪɴɢ  ɪɴ  ᴅᴀᴛᴀʙᴀꜱᴇ..."""
@@ -226,14 +226,14 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 
 <b>᚜ ᴘᴀʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs ᚛</b>
 
-💵 <a href='https://telegra.ph/SUPPORT-12-22-2'>𝗚𝗼𝗼𝗴𝗹𝗲 𝗣𝗮𝘆</a>
-💸 <a href='https://telegra.ph/SUPPORT-12-22-2'>𝗣𝗮𝘆𝘁𝗺</a>
-💶 <a href='https://telegra.ph/SUPPORT-12-22-2'>𝗣𝗵𝗼𝗻𝗲𝗣𝗲</a>
+💵 <a href='https://graph.org/file/0df2835158ddfae7084ea.jpg'>𝗚𝗼𝗼𝗴𝗹𝗲 𝗣𝗮𝘆</a>
+💸 <a href='https://graph.org/file/0df2835158ddfae7084ea.jpg'>𝗣𝗮𝘆𝘁𝗺</a>
+💶 <a href='https://graph.org/file/0df2835158ddfae7084ea.jpg'>𝗣𝗵𝗼𝗻𝗲𝗣𝗲</a>
 
 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨
 
-<b>ᴄʟɪᴄᴋ ʜᴇʀᴇ - <a href='https://telegram.me/NobiDeveloperr'>ʙᴏss</a>
-ᴄʟɪᴄᴋ ʜᴇʀᴇ - <a href='https://telegram.me/NobiDeveloperr'>ʙᴏss</a></b>"""
+<b>ᴄʟɪᴄᴋ ʜᴇʀᴇ - <a href='https://telegram.me/mpbotzsupport_bot'>ʙᴏss</a>
+ᴄʟɪᴄᴋ ʜᴇʀᴇ - <a href='https://telegram.me/mpbotzsupport_bot'>ʙᴏss</a></b>"""
     NORSLTS = """
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
@@ -242,14 +242,14 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-[{file_name}](https://telegram.me/NobiDeveloper)
+[{file_name}](https://t.me/+y6sw5OKRsck3OTA1)
 
 <b>•────•────────•────•
-📌 ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ​ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://telegram.me/AllRequestGroups)
-🎬 ᴍᴏᴠɪᴇs ᴄʜᴀɴɴᴇʟ​ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://telegram.me/MovieVillaYT)
+📌 ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ​ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/+BJfqwUjbkQFmNTU1)
+🎬 ᴍᴏᴠɪᴇs ᴄʜᴀɴɴᴇʟ​ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/+y6sw5OKRsck3OTA1)
 •────•────────•────•
 
-©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴍᴏᴠɪᴇ ᴠɪʟʟᴀ](https://youtube.com/@NobiDeveloper)</b>"""
+©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ɪɴꜰɪɴɪᴛʏ ʙᴏᴛᴢ](https://t.me/infinity_botzz)</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>{title}</b>
@@ -540,22 +540,22 @@ NOTE:
  • 𝗁 = 𝗁𝗈𝗎𝗋𝗌
  • 𝖽 = 𝖽𝖺𝗒𝗌</b>"""
     GRP_TXT = """
-<b>──────「 <a href='https://telegram.me/NobiDeveloper'>ᴇᴀʀɴ ᴍᴏɴᴇʏ</a> 」──────
+<b>──────「 <a href='https://telegram.me/mpbotzsupport_bot'>ᴇᴀʀɴ ᴍᴏɴᴇʏ</a> 」──────
 
 ➥ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴇᴀʀɴ ʟᴏᴛs ᴏꜰ ᴍᴏɴᴇʏ ꜰʀᴏᴍ ᴛʜɪꜱ ʙᴏᴛ.
 
 ›› sᴛᴇᴘ 𝟷 : ʏᴏᴜ ᴍᴜsᴛ ʜᴀᴠᴇ ᴀᴛʟᴇᴀsᴛ ᴏɴᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍɪɴɪᴍᴜᴍ 𝟹𝟶𝟶 ᴍᴇᴍʙᴇʀs.
 
-›› sᴛᴇᴘ 𝟸 : ᴍᴀᴋᴇ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ <a href='https://tnshort.net/ref/devilofficial'>ᴍᴅɪsᴋ</a> ᴏʀ <a href='https://onepagelink.in/ref/Nobita'>ᴏᴍᴇɢᴀʟɪɴᴋꜱ</a>. [ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴜsᴇ ᴏᴛʜᴇʀ sʜᴏʀᴛɴᴇʀ ᴡᴇʙsɪᴛᴇ ]
+›› sᴛᴇᴘ 𝟸 : ᴍᴀᴋᴇ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ <a href='https://tnshort.net/ref/infinitymp'>ᴛɴꜱʜᴏʀᴛ</a> ᴏʀ <a href='https://onepagelink.in/ref/infinity07'>ᴏɴᴇᴩᴀɢᴇʟɪɴᴋꜱ</a>. [ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴜsᴇ ᴏᴛʜᴇʀ sʜᴏʀᴛɴᴇʀ ᴡᴇʙsɪᴛᴇ ]
 
-›› sᴛᴇᴘ 𝟹 : ꜰᴏʟʟᴏᴡ ᴛʜᴇsᴇ <a href='https://telegram.me/NobiDeveloper/1063'>ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ</a>.
+›› sᴛᴇᴘ 𝟹 : ꜰᴏʟʟᴏᴡ ᴛʜᴇsᴇ <a href='https://t.me/infinity_botzz/13'>ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ</a>.
 
 ➥ ᴛʜɪꜱ ʙᴏᴛ ꜰʀᴇᴇ ꜰᴏʀ ᴀʟʟ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs ꜰʀᴇᴇ ᴏꜰ ᴄᴏꜱᴛ.</b>"""
 
     DELF = """
 ꜱᴏʀʀʏ ᴅᴜᴅᴇ ☹,
 
-ᴄᴜʀʀᴇɴᴛʟʏ ᴛʜɪꜱ ʙᴜᴛᴛᴏɴ ɪꜱ ɴᴏᴛ ᴡᴏʀᴋ.. 
+ᴄᴜʀʀᴇɴᴛʟʏ ᴛʜɪꜱ ʙᴜᴛᴛᴏɴ ɪꜱ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ... 
 ʙᴇᴄᴀᴜꜱᴇ ʙᴜᴛᴛᴏɴ ᴡᴇʀᴇ ʀᴇᴍᴏᴠᴇᴅ ʙʏ ᴀᴅᴍɪɴ
 """
 
@@ -590,7 +590,7 @@ NOTE:
 
 ☆ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ꜰɪʟᴇ
 
-❤️‍🔥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴏʙɪᴅᴇᴠᴇʟᴏᴘᴇʀ
+❤️‍🔥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɪɴꜰɪɴɪᴛʏ ʙᴏᴛᴢ ✨🌿
 """
 
     WRITE = """<b>ᴡʀɪᴛᴇ ᴛᴇxᴛ
