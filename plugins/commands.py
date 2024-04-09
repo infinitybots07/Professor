@@ -55,9 +55,8 @@ async def start(client, message):
             InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ  💸', callback_data='support_group')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_text(
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, message.from_user.id, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -81,9 +80,8 @@ async def start(client, message):
             InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ  💸', callback_data='support_group')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_text(
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, message.from_user.id, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -318,7 +316,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("Get File", url=f"https://telegram.me/{temp.U_NAME}?start=files_{fileid}")
             ],[
-                InlineKeyboardButton('🎪  ꜱᴜʙꜱᴄʀɪʙᴇ ᴍʏ ʏᴛ ᴄʜᴀɴɴᴇʟ  🎪', url='https://youtube.com/@NobiDeveloper')
+                InlineKeyboardButton('🎪  ꜱᴜʙꜱᴄʀɪʙᴇ ᴍʏ ʏᴛ ᴄʜᴀɴɴᴇʟ  🎪', url='https://t.me/+y6sw5OKRsck3OTA1')
             ]]
             await message.reply_photo(
                 photo='https://telegra.ph/file/99634722e5277095bf1e7.jpg',
@@ -897,7 +895,7 @@ async def deletemultiplefiles(bot, message):
 @Client.on_message(filters.command("set_shortlink"))
 async def shortlink(bot, message):
     btn = [[
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", url="https://github.com/NobiDeveloper/Nobita-Filter-Bot"),
+        InlineKeyboardButton(text="ꜱᴜᴩᴩᴏʀᴛ", url="https://t.me/+y6sw5OKRsck3OTA1"),
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://telegram.me/infinity_botzz")
         ],[
         InlineKeyboardButton(text="ᴀᴅᴅ  ʏᴏᴜʀ  ꜱʜᴏʀᴛɴᴇʀ", url="http://telegram.me/Nobita_Filter_Bot?startgroup=true")
@@ -955,7 +953,7 @@ async def onshortlink(bot, message):
     ENABLE_SHORTLINK = True
     return await message.reply_text("Successfully enabled shortlink")
 
-@Client.on_message(filters.command("g_info"))
+@Client.on_message(filters.command("get_info"))
 async def ginfo(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
@@ -990,7 +988,7 @@ async def ginfo(bot, message):
 @Client.on_message(filters.command("set_tutorial"))
 async def tutorial(bot, message):
     btn = [[
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", url="https://github.com/NobiDeveloper/Nobita-Filter-Bot"),
+        InlineKeyboardButton(text="ꜱᴜᴩᴩᴏʀᴛ", url="https://t.me/+y6sw5OKRsck3OTA1"),
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://telegram.me/infinity_botzz")
         ],[
         InlineKeyboardButton(text="ᴀᴅᴅ  ʏᴏᴜʀ  ᴛᴜᴛᴏʀɪᴀʟ", url="http://telegram.me/mpxprofessor_rbot?startgroup=true")
@@ -1016,3 +1014,13 @@ async def tutorial(bot, message):
     await save_group_settings(grpid, 'tutorial', tutorial)
     await save_group_settings(grpid, 'is_tutorial', True)
     await reply.edit_text(f"𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡 𝘼𝙙𝙙𝙚𝙙\n\n<b>➥  ʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ꜰᴏʀ {title} ɪs \n\n☞  <code>{tutorial}</code>\n\n★  ʙʏ :  <a href=https://telegram.me/infinity_botzz>@NobiDeveloper</a></b>", disable_web_page_preview=True)
+
+
+#restart func
+
+@Client.on_message(filters.command("restart") & filters.user(ADMINS))
+async def stop_button(bot, message):
+    msg = await bot.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=message.chat.id)       
+    await asyncio.sleep(3)
+    await msg.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
+    os.execl(sys.executable, sys.executable, *sys.argv)
