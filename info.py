@@ -47,11 +47,6 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 
-# Open AI
-OPENAI_API = environ.get('OPENAI_API', '0')
-if len(OPENAI_API) == 0:
-    logging.warning('OPENAI_API is empty')
-    exit()
 
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
@@ -68,7 +63,7 @@ STICKERS = (environ.get('STICKERS', 'CAACAgUAAxkBAAIKqWP81BZ6YnpWEFoF_4JPR0EbjsO
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1001757701603")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
@@ -78,12 +73,12 @@ TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫ
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
-IS_VERIFY = bool(environ.get('IS_VERIFY', False))
+IS_VERIFY = bool(environ.get('IS_VERIFY', True))
 VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
 VERIFY2_API = environ.get('VERIFY2_API', "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Onepagelink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '8c09653e5c38f84d1b76ad3197c5a023e53b494d')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
@@ -98,7 +93,7 @@ OWN_LNK = environ.get('S_GROUP', "https://t.me/+BJfqwUjbkQFmNTU1")
 MVG_LNK = environ.get('S_GROUP', "https://t.me/+BJfqwUjbkQFmNTU1")
 MSG_ALRT = environ.get('MSG_ALRT', 'ꜱʜᴀʀᴇ  ᴀɴᴅ  ꜱᴜᴘᴘᴏʀᴛ  ᴜꜱ')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'infinity_botzz')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+EapqivvgHbc5YmY1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -117,7 +112,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 LANGUAGES = ["hindi", "hin", "tamil", "tam", "telugu", "tel", "english", "eng", "kannada", "kan", "malayalam", "mal"]
-TUTORIAL = environ.get('TUTORIAL', 'https://youtu.be/rddlpYLm0G0')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/links_tutorialbypp')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
