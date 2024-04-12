@@ -49,7 +49,7 @@ async def start(client, message):
             InlineKeyboardButton('👨‍💻  ᴏᴡɴᴇʀ​', callback_data='owner_info'),
             InlineKeyboardButton('🌿  ꜱᴜᴘᴘᴏʀᴛ', callback_data='group_info')
             ],[
-            InlineKeyboardButton('💠  ʜᴇʟᴘ  💠', callback_data='help'),
+            InlineKeyboardButton('🈴  ʜᴇʟᴘ  🈴', callback_data='help'),
             InlineKeyboardButton('♻️  ᴀʙᴏᴜᴛ  ♻️', callback_data='about')
             ],[
             InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ  💸', callback_data='support_group')
@@ -74,7 +74,7 @@ async def start(client, message):
             InlineKeyboardButton('👨‍💻  ᴏᴡɴᴇʀ​', callback_data='owner_info'),
             InlineKeyboardButton('🌿  ꜱᴜᴘᴘᴏʀᴛ', callback_data='group_info')
             ],[
-            InlineKeyboardButton('💠  ʜᴇʟᴘ  💠', callback_data='help'),
+            InlineKeyboardButton('🈴  ʜᴇʟᴘ  🈴', callback_data='help'),
             InlineKeyboardButton('♻️  ᴀʙᴏᴜᴛ  ♻️', callback_data='about')
             ],[
             InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ  💸', callback_data='support_group')
