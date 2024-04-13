@@ -1,5 +1,5 @@
 {
-    "name": "Nobita-Filter-Bot",
+    "name": "Professor",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://telegram.me/NobiDeveloper",
-    "repository": "https://github.com/NobiDeveloper/Nobita-Filter-Bot",
+    "website": "https://telegram.me/infinity_botzz",
+    "repository": "https://github.com/infinitybots07/Professor",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -75,7 +75,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "eco"
+            "size": "free"
         }
     }
 }
