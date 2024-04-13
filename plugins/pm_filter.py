@@ -74,15 +74,23 @@ async def give_filter(client, message):
                     )
                 )
 
-@Client.on_message(filters.private & filters.text)
-async def pm_search(client, message):
-    temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
-    if int(total) != 0:
-        btn = [[
-                InlineKeyboardButton("Here", url='https://t.me/+BJfqwUjbkQFmNTU1')
-            ]]
-        await message.reply_text(f'Total {total_results} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
 
+@Client.on_message(filters.private & filters.text & filters.incoming)
+async def pm_text(bot, message):
+  #  await message.react(emoji="♥️")
+    content = message.text
+    user = message.from_user.first_name
+    user_id = message.from_user.id
+    if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
+  #  if user_id in ADMINS: return # ignore admins
+    await message.reply_text(
+            text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://telegram.me/+BJfqwUjbkQFmNTU1>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://telegram.me/+BJfqwUjbkQFmNTU1")]])
+        )
+        await bot.send_message(
+            chat_id=LOG_CHANNEL,
+            text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
+        )
 
 
 @Client.on_callback_query(filters.regex(r"^next"))
