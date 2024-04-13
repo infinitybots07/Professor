@@ -81,7 +81,7 @@ async def pm_search(client, message):
         btn = [[
                 InlineKeyboardButton("Here", url='https://t.me/+BJfqwUjbkQFmNTU1')
             ]]
-            await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
 
 
 
