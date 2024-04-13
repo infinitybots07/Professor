@@ -6,7 +6,7 @@ class script(object):
 ɪ  ᴄᴀɴ  ᴘʀᴏᴠɪᴅᴇ  ᴍᴏᴠɪᴇs  ᴀɴᴅ  sᴇʀɪᴇs,
 ᴊᴜsᴛ  ᴀᴅᴅ  ᴍᴇ  ᴛᴏ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ  ᴀɴᴅ  ᴇɴᴊᴏʏ .
 
-<b>ɪᴅ</b> : <code>{}</code>
+**ɪᴅ** : <code>{}</code>
 
 💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/infinity_botzz'>˹ɪɴꜰɪɴɪᴛʏ ʙᴏᴛᴢ˼</a></b>
 """
@@ -14,14 +14,7 @@ class script(object):
 <b>{} 🙋‍♂
 
 🔺 ᴍʏ ɴᴀᴍᴇ - ᴍʀ ɪɴꜰɪɴɪᴛʏ
-♾ ᴜsᴇʀɴᴀᴍᴇ - <a href='https://telegram.me/mpbotzsupport_bot'></a>
-❕ ᴘᴍ. ᴅᴍ ʟɪɴᴋ - <a href='https://telegram.me/mpbotzsupport_bot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-👼 
-⏳ 
-🎭 
-🔱 
-🏛
-🗣 ᴋɴᴏᴡ ʟᴀɴɢᴜᴀɢᴇ - ʜɪɴᴅɪ, ᴇɴɢʟɪsʜ</b>
+❕ ᴘᴍ. ᴅᴍ ʟɪɴᴋ - <a href='https://telegram.me/mpbotzsupport_bot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
 """
     HELP_TXT = """
 <b>{},
@@ -152,7 +145,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ┣⪼𖨠 ♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
 ┣⪼𖨠 🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ┣⪼𖨠 🆓 ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code>
-╰━━━━━━━━━❰<a href='https://telegram.me/infinity_botzz'>ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢ</a>❱━━━━══❍⊱❁۪۪</b>"""
+╰━━━━━━❰<a href='https://telegram.me/infinity_botzz'>ɪɴғɪɴɪᴛʏ ʙᴏᴛᴢ</a>❱━══❍⊱❁۪۪</b>"""
 
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
 
@@ -620,7 +613,7 @@ NOTE:
 
 ᴜsᴇ ᴛʜɪs ꜰᴏʀᴍᴀᴛ 👇
 
-<code>/github Nobideveloper</code>"""
+<code>/github InfinityBotz</code>"""
 
     YTTAGS = """<b>ꜰᴏʀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ᴛᴀɢs -
 
