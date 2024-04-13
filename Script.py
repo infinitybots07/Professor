@@ -6,6 +6,8 @@ class script(object):
 ɪ  ᴄᴀɴ  ᴘʀᴏᴠɪᴅᴇ  ᴍᴏᴠɪᴇs  ᴀɴᴅ  sᴇʀɪᴇs,
 ᴊᴜsᴛ  ᴀᴅᴅ  ᴍᴇ  ᴛᴏ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ  ᴀɴᴅ  ᴇɴᴊᴏʏ .
 
+**ɪᴅ** : <code>{}</code>
+
 💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/infinity_botzz'>˹ɪɴꜰɪɴɪᴛʏ ʙᴏᴛᴢ˼</a></b>
 """
     NOBI = """
