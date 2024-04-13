@@ -43,7 +43,6 @@ ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
-    await message.react(emoji=random.choice(REACTIONS))
     if message.chat.id != SUPPORT_CHAT_ID:
         glob = await global_filters(client, message)
         if glob == False:
@@ -57,6 +56,7 @@ async def give_filter(client, message):
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_ffilter', True)
                     settings = await get_settings(message.chat.id)
+                    await message.react(emoji=random.choice(REACTIONS))
                     if settings['auto_ffilter']:
                         await auto_filter(client, message)
     else: #a better logic to avoid repeated lines of code in auto_filter function
@@ -81,7 +81,7 @@ async def pm_search(client, message):
         btn = [[
                 InlineKeyboardButton("Here", url='https://t.me/+BJfqwUjbkQFmNTU1')
             ]]
-        await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
 
 
 
