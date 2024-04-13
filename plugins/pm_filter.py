@@ -79,7 +79,7 @@ async def pm_search(client, message):
     files, n_offset, total = await get_search_results(message.text)
     if int(total) != 0:
         btn = [[
-                InlineKeyboardButton("Here", url=https://t.me/+BJfqwUjbkQFmNTU1)
+                InlineKeyboardButton("Here", url='https://t.me/+BJfqwUjbkQFmNTU1')
             ]]
             await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
 
