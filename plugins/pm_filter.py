@@ -76,12 +76,12 @@ async def give_filter(client, message):
 
 @Client.on_message(filters.private & filters.text)
 async def pm_search(client, message):
-    files, n_offset, total = await get_search_results(message.text)
+    temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
     if int(total) != 0:
         btn = [[
                 InlineKeyboardButton("Here", url='https://t.me/+BJfqwUjbkQFmNTU1')
             ]]
-            await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_text(f'Total {total_results} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
 
 
 
