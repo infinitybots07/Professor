@@ -41,8 +41,9 @@ BUTTONS = {}
 SPELL_CHECK = {}
 ENABLE_SHORTLINK = ""
 
-@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
+@Client.on_message((filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
+    await message.react(emoji=random.choice(REACTIONS))
     if message.chat.id != SUPPORT_CHAT_ID:
         glob = await global_filters(client, message)
         if glob == False:
@@ -72,6 +73,21 @@ async def give_filter(client, message):
                         ]]
                     )
                 )
+
+@Client.on_message(filters.private & filters.text)
+async def pm_search(client, message):
+    if PM_SEARCH:
+        await auto_filter(client, message)
+    else:
+        files, n_offset, total = await get_search_results(message.text)
+        if int(total) != 0:
+            btn = [[
+                InlineKeyboardButton("Here", url=FILMS_LINK)
+            ]]
+            await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
+
+
+
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
