@@ -43,6 +43,7 @@ ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
+    await message.react(emoji=random.choice(REACTIONS))
     if message.chat.id != SUPPORT_CHAT_ID:
         glob = await global_filters(client, message)
         if glob == False:
@@ -56,9 +57,7 @@ async def give_filter(client, message):
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_ffilter', True)
                     settings = await get_settings(message.chat.id)
-                    await message.react(emoji=random.choice(REACTIONS))
-                    if settings['auto_ffilter']:
-                        await auto_filter(client, message)
+                    await auto_filter(client, message)
     else: #a better logic to avoid repeated lines of code in auto_filter function
         search = message.text
         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
@@ -77,7 +76,7 @@ async def give_filter(client, message):
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
-  #  await message.react(emoji="♥️")
+    await message.react(emoji=random.choice(REACTIONS))
     content = message.text
     user = message.from_user.first_name
     user_id = message.from_user.id
