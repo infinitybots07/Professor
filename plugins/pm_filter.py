@@ -795,7 +795,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://t.me/infinity_botzz/105')
+                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://t.me/hd_movies_hub01/7')
                  ]
                 ]
             )
@@ -1384,7 +1384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ  ʙᴜɢꜱ  ᴀɴᴅ  ꜰᴇᴇᴅʙᴀᴄᴋ', url='https://telegram.me/+JWsoDEJEB9EyNDU1')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴩ', url='https://t.me/+BJfqwUjbkQFmNTU1')
+            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴩ', url='https://t.me/mpbotzsupport_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1728,12 +1728,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("💶    ᴘʟᴇᴀsᴇ  ᴅᴏɴᴀᴛᴇ    💶", url="https://graph.org/file/0df2835158ddfae7084ea.jpg")
                  ],[
                     InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://telegram.me/+BJfqwUjbkQFmNTU1")
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://telegram.me/mpbotzsupport_bot")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)           
             await query.message.edit_text(
                 text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
+                disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML
             )
 
