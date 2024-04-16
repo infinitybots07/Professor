@@ -43,7 +43,7 @@ ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
-   # await message.react(emoji=random.choice(REACTIONS))
+    await message.react(emoji=random.choice(REACTIONS))
     if message.chat.id != SUPPORT_CHAT_ID:
         glob = await global_filters(client, message)
         if glob == False:
@@ -795,7 +795,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://telegram.me/+y6sw5OKRsck3OTA1')
+                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://t.me/hd_movies_hub01/7')
                  ]
                 ]
             )
@@ -1384,7 +1384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ  ʙᴜɢꜱ  ᴀɴᴅ  ꜰᴇᴇᴅʙᴀᴄᴋ', url='https://telegram.me/+JWsoDEJEB9EyNDU1')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴩ', url='https://t.me/+BJfqwUjbkQFmNTU1')
+            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴩ', url='https://t.me/mpbotzsupport_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1644,7 +1644,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://infinity_botzz'),
+           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/infinity_botzz'),
            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://telegram.me/talk_mrs_bot')
         ], [
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2')
@@ -1728,12 +1728,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("💶    ᴘʟᴇᴀsᴇ  ᴅᴏɴᴀᴛᴇ    💶", url="https://graph.org/file/0df2835158ddfae7084ea.jpg")
                  ],[
                     InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://telegram.me/+BJfqwUjbkQFmNTU1")
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://telegram.me/mpbotzsupport_bot")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)           
             await query.message.edit_text(
                 text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
+                disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML
             )
 
@@ -1949,16 +1950,16 @@ async def auto_filter(client, msg, spoll=False):
         try:
             if settings['max_btn']:
                 btn.append(
-                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ≫",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⋟",callback_data=f"next_{req}_{key}_{offset}")]
                 )
             else:
                 btn.append(
-                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ≫",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⋟",callback_data=f"next_{req}_{key}_{offset}")]
                 )
         except KeyError:
             await save_group_settings(message.chat.id, 'max_btn', True)
             btn.append(
-                [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ≫",callback_data=f"next_{req}_{key}_{offset}")]
+                [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⋟",callback_data=f"next_{req}_{key}_{offset}")]
             )
     else:
         btn.append(
