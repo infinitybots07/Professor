@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 
-REACTIONS = ["🔥", "❤️", "😍", "⚡", "🥰", "🥳", "✨", "🎉", "💯", "🤩"]
+REACTIONS = ["🔥", "❤️", "😍", "⚡", "🥰", "👍", "🎉", "💯"]
 BUTTONS = {}
 SPELL_CHECK = {}
 ENABLE_SHORTLINK = ""
