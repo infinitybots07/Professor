@@ -795,7 +795,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://telegram.me/+y6sw5OKRsck3OTA1')
+                  InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ​ 🔥​', url='https://t.me/infinity_botzz/105')
                  ]
                 ]
             )
@@ -1644,7 +1644,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://infinity_botzz'),
+           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/infinity_botzz'),
            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://telegram.me/talk_mrs_bot')
         ], [
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help2')
