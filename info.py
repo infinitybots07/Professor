@@ -24,10 +24,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/e40a1b5d35de3b8dd9d51.jpg https://telegra.ph/file/dfea681cd1880a2140b0c.jpg https://telegra.ph/file/2a6fc77472dd203523c80.jpg https://telegra.ph/file/ecf846a8bbf2acecb9783.jpg https://telegra.ph/file/cbc053d0fd48d0ba1e86d.jpg https://telegra.ph/file/526c8e145fb5945e34a67.jpg https://telegra.ph/file/68e48d8ed5b03870dd430.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/e40a1b5d35de3b8dd9d51.jpg https://te.legra.ph/file/dfea681cd1880a2140b0c.jpg https://te.legra.ph/file/2a6fc77472dd203523c80.jpg https://te.legra.ph/file/ecf846a8bbf2acecb9783.jpg https://te.legra.ph/file/cbc053d0fd48d0ba1e86d.jpg https://te.legra.ph/file/526c8e145fb5945e34a67.jpg https://te.legra.ph/file/68e48d8ed5b03870dd430.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/bfd26b0a3690cdd2b56bf.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/f7f2a532fe4b990044507.mp4")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/3d9a17e8f0d5df06f3d5c.jpg")
 
 # Admins, Channels & User
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -57,7 +57,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # stickers
-STICKERS = (environ.get('STICKERS', 'CAACAgUAAxkBAAIKqWP81BZ6YnpWEFoF_4JPR0EbjsO3AAIvBwACnMjpV9YvaONl41IBHgQ CAACAgUAAxkBAAIKrmP81GnWQ0d_BAZhre0dMc5SwJKOAAJ0DgACgr3gVwrjYuxSJxn7HgQ')).split()
+STICKERS = (environ.get('STICKERS', 'CAACAgUAAx0CZz_GMwACEVhmHlqXYaH8gGlOtG0K3HGugMCAzAACYg4AAgkO8FQmAaFVs6jrUR4E')).split()
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
