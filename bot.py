@@ -56,7 +56,9 @@ class Bot(Client):
         await app.setup()
         await web.TCPSite(app, "0.0.0.0", "8080").start()
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
-
+        for admin in ADMINS:
+            await self.send_message(chat_id=admin, text=f"<b>✅ ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ</b>")
+            
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
