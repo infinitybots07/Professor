@@ -179,7 +179,8 @@ async def broadcast_messages(user_id, message):
         logging.info(f"{user_id} - ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ, ꜱɪɴᴄᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ.")
         return False, "Deleted"
     except UserIsBlocked:
-        logging.info(f"{user_id} - ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ")
+        await db.delete_user(int(user_id))
+        logging.info(f"{user_id} - ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ, ꜱɪɴᴄᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ")
         return False, "Blocked"
     except PeerIdInvalid:
         await db.delete_user(int(user_id))
