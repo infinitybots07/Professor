@@ -54,7 +54,7 @@ async def grp_brodcst(bot, message):
 
     success = 0
     async for chat in chats:
-        pti, sh = await grp_broadcast(int(chat['id']), b_msg)
+        pti, sh = await broadcast_messages_groups(int(chat['id']), b_msg)
         if pti:
             success += 1
         elif pti == False:
