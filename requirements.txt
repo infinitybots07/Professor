@@ -6,7 +6,7 @@ marshmallow
 umongo
 requests
 bs4
-git+https://github.com/NobiDeveloper/cinemagoer
+git+https://github.com/Joelkb/cinemagoer
 search_engine_parser
 wget
 aiofiles
