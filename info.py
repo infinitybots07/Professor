@@ -75,7 +75,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 # Others
 IS_VERIFY = bool(environ.get('IS_VERIFY', True))
 VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
-VERIFY2_API = environ.get('VERIFY2_API', "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
+VERIFY2_API = environ.get('VERIFY2_API', "9bccb0b14ed6841652fa22d3481907788c1b8838")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', '9bccb0b14ed6841652fa22d3481907788c1b8838')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
