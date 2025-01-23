@@ -25,7 +25,8 @@ REACTIONS = ["🔥", "❤️", "😍", "⚡", "🥰", "👍", "🎉", "💯"]
 async def start(client, message):
     try:
         await message.react(emoji=random.choice(REACTIONS), big=True)
-    except pass
+    except:
+        pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
