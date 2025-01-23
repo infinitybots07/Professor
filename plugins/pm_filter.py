@@ -1169,6 +1169,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1701,6 +1702,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = get_size(free)
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1720,6 +1722,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = get_size(free)
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2077,7 +2080,8 @@ async def advantage_spell_chok(client, msg):
         logger.exception(e)
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-                   InlineKeyboardButton("🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={reqst_gle}"),
+                   InlineKeyboardButton("🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={reqst_gle}")
+        ], [
                    InlineKeyboardButton("•ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ•", url="https://t.me/talk_mrs_bot")
         ]]
         if NO_RESULTS_MSG:
@@ -2095,7 +2099,8 @@ async def advantage_spell_chok(client, msg):
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-                   InlineKeyboardButton("🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={reqst_gle}"),
+                   InlineKeyboardButton("🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={reqst_gle}")
+        ], [
                    InlineKeyboardButton("•ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ•", url="https://t.me/talk_mrs_bot")
         ]]
         if NO_RESULTS_MSG:
