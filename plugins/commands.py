@@ -319,6 +319,11 @@ async def start(client, message):
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
+                try:
+                await client.send_message(VERIFICATION_CHANNEL, f"<u>ɪραρкσʀɴ νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ɪᴩᴀᴩᴋᴏʀɴ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
+            except Exception as e:
+                print(f"{e}")
+                await client.send_message(LOG_CHANNEL, f"Unable to send message to verification channel.\n\n{e}")
                 return
             btn = [[
                 InlineKeyboardButton("✅ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇ ✅", url=f"https://telegram.me/{temp.U_NAME}?start=files_{fileid}")
@@ -331,6 +336,11 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             await verify_user(client, userid, token)
+            try:
+                await client.send_message(VERIFICATION_CHANNEL, f"<u>ɪραρкσʀɴ νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ɪᴩᴀᴩᴋᴏʀɴ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
+            except Exception as e:
+                print(f"{e}")
+                await client.send_message(LOG_CHANNEL, f"Unable to send message to verification channel.\n\n{e}")
             return
         else:
             return await message.reply_text(
