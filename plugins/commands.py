@@ -324,7 +324,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 try:
-                    await client.send_message(VERIFICATION_CHANNEL, f"<u>ɪραρкσʀɴ νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ɪᴩᴀᴩᴋᴏʀɴ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
+                    await client.send_message(VERIFICATION_CHANNEL, f"<u>ᴩяσꜰєѕѕσя νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ᴩʀᴏꜰᴇꜱꜱᴏʀ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
                 except Exception as e:
                     print(f"{e}")
                     await client.send_message(LOG_CHANNEL, f"Unable to send message to verification channel.\n\n{e}")
@@ -341,7 +341,7 @@ async def start(client, message):
             )
             await verify_user(client, userid, token)
             try:
-                await client.send_message(VERIFICATION_CHANNEL, f"<u>ɪραρкσʀɴ νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ɪᴩᴀᴩᴋᴏʀɴ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
+                await client.send_message(VERIFICATION_CHANNEL, f"<u>ᴩяσꜰєѕѕσя νєʀɪꜰɪᴄαтɪᴏɴ υѕєʀ</u>\nᴠᴇʀɪꜰʏ ᴜꜱᴇʀ ɪᴅ : {message.from_user.id}\nᴜꜱᴇʀ ᴩʀᴏꜰɪʟᴇ: {message.from_user.mention}\nᴛɪᴍᴇ : {dt.now(pytz.timezone('Asia/Kolkata')).strftime('%d %B %Y')}\n#ᴩʀᴏꜰᴇꜱꜱᴏʀ_ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ")
             except Exception as e:
                 print(f"{e}")
                 await client.send_message(LOG_CHANNEL, f"Unable to send message to verification channel.\n\n{e}")
