@@ -79,9 +79,9 @@ APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 # Others
 IS_VERIFY = bool(environ.get('IS_VERIFY', True))
 VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
-VERIFY2_API = environ.get('VERIFY2_API', "9bccb0b14ed6841652fa22d3481907788c1b8838")
+VERIFY2_API = environ.get('VERIFY2_API', "b2da06188bd355e103d16ab1b56db314709740df")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '9bccb0b14ed6841652fa22d3481907788c1b8838')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'b2da06188bd355e103d16ab1b56db314709740df')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001858701768').split()]
