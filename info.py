@@ -72,23 +72,23 @@ REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL)
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 #Auto approve 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001732232755').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.</b>")
-APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
+APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 IS_VERIFY = bool(environ.get('IS_VERIFY', True))
-VERIFY2_URL = environ.get('VERIFY2_URL', "tnshort.net")
-VERIFY2_API = environ.get('VERIFY2_API', "b2da06188bd355e103d16ab1b56db314709740df")
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b2da06188bd355e103d16ab1b56db314709740df')
+VERIFY2_URL = environ.get('VERIFY2_URL', "runurl.in")
+VERIFY2_API = environ.get('VERIFY2_API', "23713ba321c3ed8a7d3580276b0248a5a41f30bd")
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'runurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '23713ba321c3ed8a7d3580276b0248a5a41f30bd')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001858701768').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-S_GROUP = environ.get('S_GROUP', "https://telegram.me/infinity_botzz")
+S_GROUP = environ.get('S_GROUP', "https://t.me/+JWsoDEJEB9EyNDU1")
 RUL_LNK = environ.get('RUL_LNK', "https://graph.org/%F0%9D%97%A0%F0%9D%9E%93%F0%9D%97%A6%F0%9D%97%A7%F0%9D%9E%9D%F0%9D%97%A5-02-15")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL', "https://telegram.me/infinity_botzz")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+BJfqwUjbkQFmNTU1')
